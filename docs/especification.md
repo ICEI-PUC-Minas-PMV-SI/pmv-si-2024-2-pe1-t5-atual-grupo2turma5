@@ -1,26 +1,18 @@
 # Especificações do Projeto
 
+<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
+Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Samuel Soares tem 17 anos, é estudante do ensino médio. Pretende se preparar para o vestibular e adequar a nova rotina sem perder muito dos seus momentos de diversão. Escola, tarefas, namorada, futebol no fim de semana e agora o vetibular estão lhe dando dor de cabeça. Está à procura de algo que o ajude a se displinar.   
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Claudia Ferreira tem 43 anos, é promotora de vendas. Recém divorciada, dividir a guarda da filha pequena está sendo uma dor de cabeça. Seja busca-la na natacão, escola ou festa, ou passar o fim de semana na casa do pai, percebeu que precisa se gerenciar melhor. Não esquece algo com frequência mas anda estressada recentemente.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Joaquim Cleto tem 68 anos, é mecânico aposentado. Seu médico do coração recomendou a fazer atividades físicas. Sua esposa tem que ficar lembrando-o dos horários do pilates, de tomar remédios e até mesmo dos retornos das consultas. Pediu ao seu filho para ajuda-lo, principalmente para dar sossego a mulher.
 
 ## Histórias de Usuários
 
@@ -28,8 +20,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Usuário viajante  |Ajustar automaticamente os fusos horários para compromissos         | Garantir que meus eventos estejam corretamente programados              |
+|Usuário que tem uma agenda lotada       | Visualizar meus compromissos em um calendário mensal| Ter uma visão geral clara do meu mês e planejar melhor meus horários|
+|Usuário que compartilha a agenda com colegas de trabalho       |  Compartilhar eventos e compromissos com outras pessoas| TCoordenar melhor os horários e evitar conflitos|
+|Administrador       | Visualizar relatórios de uso do sistema| Monitorar a frequência de uso e identificar possíveis melhorias para a aplicação|
+|Administrador       | Ter a capacidade de excluir ou editar compromissos de qualquer usuário| Resolver problemas de agendamentos incorretos ou duplicados|
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -46,33 +43,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade | 
-|------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
+|RF-001| Permitir que o usuário gerencie itens (tarefas/reuniões) | ALTA | 
+|RF-002| Emitir relatórios de tarefas no mês/semana/dia | MÉDIA |
+|RF-003| Ajustar automaticamente os fusos horários para itens | ALTA |
+|RF-004| Visualizar compromissos em um calendário mensal/semanal/diário | ALTA |
+|RF-005| Compartilhar eventos e compromissos com outras pessoas | ALTA |
+|RF-006| Administradores podem visualizar relatórios de uso do sistema | MÉDIA |
+|RF-007| Administradores podem gerenciar itens de qualquer usuário | ALTA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-002| Deve processar requisições do usuário em no máximo 3s | BAIXA | 
+|RNF-003| O sistema deve garantir a segurança dos dados dos usuários | ALTA |
+|RNF-002| A interface deve ser intuitiva e fácil de usar para todas as personas | ALTA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
