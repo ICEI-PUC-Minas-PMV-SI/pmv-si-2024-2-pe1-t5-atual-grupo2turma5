@@ -1,0 +1,271 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html.light-theme {
+    --text: #000;
+    --primary: #64C7DE;
+    --alt-p: #526063;
+    --secondary: #DEAB57;
+    --alt-s: #61410D;
+    --tertiary: #DE8864;
+    --alt-t: #632910;
+}
+
+html.dark-theme {
+    --text: #fff;
+    --primary: #526063;
+    --alt-p: #64C7DE;
+    --secondary: #61410D;
+    --alt-s: #DEAB57;
+    --tertiary: #632910;
+    --alt-t: #DE8864;
+}
+
+body {
+    line-height: 1.7em;
+    color: var(--text);
+    font-size: 13px;
+}
+
+.l-box {
+    padding: 1em;
+}
+
+.is-center {
+    text-align: center;
+}
+
+.pure-form label {
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.pure-button-hover,
+.pure-button:focus,
+.pure-button:hover {
+    background-image: linear-gradient(transparent, rgba(255, 255, 255, .5), transparent);
+}
+
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected {
+    background: var(--secondary);
+    color: var(--text);
+}
+
+.pure-button {
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+a.pure-button-primary {
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
+
+.home-menu {
+    background: var(--secondary);
+}
+
+.pure-menu.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.pure-menu-heading {
+    color: var(--text);
+}
+
+.pure-menu-active>.pure-menu-link,
+.pure-menu-link:focus,
+.pure-menu-link:hover {
+    background-color: unset;
+    color: var(--text);
+}
+
+.pure-menu-link {
+    color: var(--text);
+}
+
+.pure-menu-link:hover {
+    background-image: linear-gradient(transparent, rgba(255, 255, 255, .5), transparent);
+}
+
+.home-menu .pure-menu-selected a {
+    color: var(--text);
+}
+
+.splash-container {
+    background: var(--primary);
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.splash-subhead {
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: var(--tertiary);
+}
+
+.content {
+    padding: 1em 1em 3em;
+}
+
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+.content-subhead i {
+    margin-right: 7px;
+}
+
+.footer {
+    background: var(--secondary);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+*/
+
+@media (min-width: 48em) {
+    body {
+        font-size: 18px;
+    }
+
+    .home-menu {
+        text-align: left;
+    }
+
+    .home-menu ul {
+        float: right;
+    }
+
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+
+    .splash-head {
+        font-size: 250%;
+    }
+
+    .l-box-lrg {
+        border: none;
+    }
+}
+
+@media (min-width: 78em) {
+    .splash-head {
+        font-size: 300%;
+    }
+}
