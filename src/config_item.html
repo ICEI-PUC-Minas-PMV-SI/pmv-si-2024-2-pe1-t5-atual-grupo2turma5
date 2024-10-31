@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configurar Item</title>
+    <link rel="stylesheet" href="config_item.css" />
+  </head>
+  <body>
+    <h1>Configurar Item</h1>
+    <div>
+      <label for="type">Tipo do Item *</label>
+      <select name="typeOfItem" id="type">
+        <option value="default">Selecione</option>
+        <option value="task">Tarefas</option>
+        <option value="meeting">Reuniões</option>
+      </select>
+      <label for="name">Nome do Item *</label>
+      <input type="text" name="nameOfItem" id="name" />
+    </div>
+    <div>
+      <label for="time">Horário do Item *</label>
+      <input type="time" name="timeOfItem" id="time" />
+      <label for="local">Local do Item</label>
+      <input type="text" name="localOfItem" id="local" />
+    </div>
+    <div>
+      <label for="notes">Notas para o Item</label>
+      <input type="text" name="notesOfItem" id="notes" />
+      <button>Criar evento</button>
+    </div>
+
+  </body>
+</html>

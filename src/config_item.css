@@ -1,0 +1,86 @@
+body {
+    background-color: #0D1B2A; 
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  div {
+    background-color: #F5811E;
+    padding: 20px;
+    margin-top: 25px;
+    width: 90dvw;
+    border-radius: 12px;
+    position: relative;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 71dvw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    color: #080808;
+  }
+  
+  input[type="text"],
+  input[type="time"] {
+    width: 70dvw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    color: #080808;
+  }
+  
+  #notes {
+    width: 70dvw;
+    height: 10dvh;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    color: #080808;
+  }
+  
+  select:focus,
+  input[type="text"]:focus,
+  input[type="time"]:focus {
+    outline: none;
+    border-color: #F5811E;
+    box-shadow: 0 0 5px rgba(245, 129, 30, 0.5);
+  }
+  
+  button {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #555555;
+  }
+  
