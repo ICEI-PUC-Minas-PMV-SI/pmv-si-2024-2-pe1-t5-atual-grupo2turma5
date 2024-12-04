@@ -17,312 +17,103 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed pure-g">
-            <ul class="pure-menu-list pure-u-1-3 tal">
-                <li class="pure-menu-item">
-                    <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">home</span></a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">calendar_month</span></a>
-                </li>
-                <li class="pure-menu-item">
-                    <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">alarm</span></a>
-                </li>
-            </ul>
-            <a class="pure-menu-heading pure-u-1-3" href="/">organize.me</a>
-            <ul class="pure-menu-list pure-u-1-3 tar">
-                <li class="pure-menu-item">
-                    <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">settings</span></a>
-                </li>
-            </ul>
-        </div>
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed pure-g">
+        <ul class="pure-menu-list pure-u-1-3 tal">
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">home</span></a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">calendar_month</span></a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">alarm</span></a>
+            </li>
+        </ul>
+        <a class="pure-menu-heading pure-u-1-3" href="#">organize.me</a>
+        <ul class="pure-menu-list pure-u-1-3 tar">
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link"><span class="material-symbols-sharp">settings</span></a>
+            </li>
+        </ul>
     </div>
 
     <main class="pure-g reverse">
-        <div class="pure-u-3-4">
+        <div class="pure-u-3-4 tall">
             <div class="panel table">
                 <div class="panel-header">
                     <div class="spinner left">
-                        <button class="pure-button lean round"><span class="material-symbols-sharp">arrow_upward</span></button>
-                        <h2>Outubro</h2>
-                        <button class="pure-button lean round"><span class="material-symbols-sharp">arrow_downward</span></button>
+                        <a id="mes-decr" href="#" class="pure-button lean round"><span class="material-symbols-sharp">arrow_back</span></a>
+                        <h2 id="mes-nome">#######</h2>
+                        <a id="mes-incr" href="#" class="pure-button lean round"><span class="material-symbols-sharp">arrow_forward</span></a>
                     </div>
                     <div class="spinner right">
-                        <button class="pure-button lean round"><span class="material-symbols-sharp">arrow_back</span></button>
-                        <h2>2024</h2>
-                        <button class="pure-button lean round"><span class="material-symbols-sharp">arrow_forward</span></button>
+                        <a id="ano-decr" href="#" class="pure-button lean round"><span class="material-symbols-sharp">arrow_back</span></a>
+                        <h2 id="ano-nome">####</h2>
+                        <a id="ano-incr" href="#" class="pure-button lean round"><span class="material-symbols-sharp">arrow_forward</span></a>
                     </div>
                 </div>
-                <div class="week-header">
-                    <h2>Dom</h2>
-                    <h2>Seg</h2>
-                    <h2>Ter</h2>
-                    <h2>Qua</h2>
-                    <h2>Qui</h2>
-                    <h2>Sex</h2>
-                    <h2>Sab</h2>
+                <!-- --- --- --- --- --- --- -->
+                <div id="semana-header">
+                    <span class="material-symbols-sharp">refresh</span>
                 </div>
-                <div class="month scroll large">
-                    <div class="week">
-                        <a href="semana.html" class="pure-button lean"><span class="material-symbols-sharp">open_in_new</span></a>
-                        <div class="day inactive">
-                            <h2 class="day-number"><a href="di">29</a></h2>
-                        </div>
-                        <div class="day inactive">
-                            <h2 class="day-number"><a href="#">30</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">01</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">02</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">03</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">04</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">05</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                    </div>
-                    <div class="week">
-                        <a href="semana.html" class="pure-button lean"><span class="material-symbols-sharp">open_in_new</span></a>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">06</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">07</a></h2>
-                            <h2 class="day-item item-2"><a href="#"><span class="material-symbols-sharp">star</span></a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">08</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">09</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">10</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">11</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x1</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">12</a></h2>
-                        </div>
-                    </div>
-                    <div class="week">
-                        <a href="semana.html" class="pure-button lean"><span class="material-symbols-sharp">open_in_new</span></a>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">13</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">14</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">15</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">16</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">17</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">18</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x1</a></h2>
-                            <h2 class="day-item item-2"><a href="#"><span class="material-symbols-sharp">star</span></a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">19</a></h2>
-                        </div>
-                    </div>
-                    <div class="week">
-                        <a href="semana.html" class="pure-button lean"><span class="material-symbols-sharp">open_in_new</span></a>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">20</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">21</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">22</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">23</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">24</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">25</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x1</a></h2>
-                            <h2 class="day-item item-2"><a href="#"><span class="material-symbols-sharp">star</span></a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">26</a></h2>
-                        </div>
-                    </div>
-                    <div class="week">
-                        <a href="semana.html" class="pure-button lean"><span class="material-symbols-sharp">open_in_new</span></a>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">27</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">28</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">29</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">30</a></h2>
-                        </div>
-                        <div class="day">
-                            <h2 class="day-number"><a href="#">31</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x2</a></h2>
-                        </div>
-                        <div class="day inactive">
-                            <h2 class="day-number"><a href="#">01</a></h2>
-                            <h2 class="day-item item-1"><a href="#"><span class="material-symbols-sharp">circle</span>x1</a></h2>
-                            <h2 class="day-item item-2"><a href="#"><span class="material-symbols-sharp">star</span></a></h2>
-                        </div>
-                        <div class="day inactive">
-                            <h2 class="day-number"><a href="#">02</a></h2>
-                        </div>
-                    </div>
+                <!-- |====|====| MÊS |====|====| -->
+                <div id="mes" class="mes scroll large">
+                    <span class="material-symbols-sharp">refresh</span>
                 </div>
             </div>
         </div>
-        <div class="pure-u-1-4">
-            <div class="panel">
+        <div class="pure-u-1-4 tall">
+            <div class="panel tall">
                 <div class="block">
                     <div class="top">
                         <label class="lbl-input l-f">
-                            <input type="search" id="item-search" placeholder="Procurar...">
                             <span class="material-symbols-sharp l-f">search</span>
+                            <input id="pesquisa" type="search" placeholder="Procurar...">
                         </label>
                         <details>
                             <summary>Filtros</summary>
-                            <details>
+                            <details id="filtro-tipos">
                                 <summary>Tipo de item</summary>
-                                <button>Compromissos</button>
-                                <button>Tarefas</button>
-                                <button>Eventos</button>
+                                <a href="#" class="pure-button toggle" data-toggle="check" data-tipo="0"><span>Compromissos</span></a>
+                                <a href="#" class="pure-button toggle" data-toggle="check" data-tipo="1"><span>Eventos</span></a>
+                                <a href="#" class="pure-button toggle" data-toggle="check" data-tipo="2"><span>Tarefas</span></a>
                             </details>
-                            <details>
-                                <summary>Intervalo de tempo</summary>
+                            <details id="filtro-intervalo">
+                                <summary>Intervalo</summary>
                                 <label>
                                     De:
-                                    <input type="date" name="de" id="_">
+                                    <input id="intervalo-inicio" type="date" name="inicio">
                                 </label>
                                 <br>
                                 <label>
                                     Até:
-                                    <input type="date" name="ate" id="__">
+                                    <input id="intervalo-fim" type="date" name="fim">
                                 </label>
                             </details>
-                            <details>
+                            <details id="filtro-tags">
                                 <summary>Etiquetas</summary>
-                                <button class="pure-button"><span class="material-symbols-sharp">library_add</span></button>
-                                <button>Etiqueta-1</button>
-                                <button>Etiqueta-2</button>
-                                <button>Etiqueta-3</button>
-                                <button>Etiqueta-4</button>
                             </details>
                         </details>
                     </div>
                     <div class="bot">
-                        <div class="scroll">
-                            <div class="card">
-                                <h6 class="item-tag">Etiqueta-1</h6>
-                                <h4 class="item-tit">Compromisso-1</h4>
-                                <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                            </div>
-                            <div class="card">
-                                <h6 class="item-tag">Etiqueta-1</h6>
-                                <h4 class="item-tit">Compromisso-2</h4>
-                                <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                            </div>
-                            <div class="card">
-                                <h6 class="item-tag">Etiqueta-1</h6>
-                                <h4 class="item-tit">Compromisso-3</h4>
-                                <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                            </div>
-                            <div class="card">
-                                <h6 class="item-tag">Etiqueta-1</h6>
-                                <h4 class="item-tit">Compromisso-4</h4>
-                                <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                            </div>
-                        </div>
+                        <div id="resultados-pesquisa" class="scroll"></div>
                     </div>
                 </div>
-                <br>
-                <div class="block">
-                    <div class="top">
-                        <h2 class="nomargin">De 6 a 12</h2>
+                <div id="preview-semana" class="block">
+                    <div class="top spinner">
+                        <a id="semana-decr" href="#" class="pure-button lean round"><span class="material-symbols-sharp">arrow_back</span></a>
+                        <h2 id="semana-nome" class="nomargin">De ## a ##</h2>
+                        <a id="semana-incr" href="#" class="pure-button lean round"><span class="material-symbols-sharp">arrow_forward</span></a>
                     </div>
                     <div class="bot">
-                        <div class="scroll">
-                            <div class="row">
-                                <h3>Dia 7</h3>
-                                <div class="card">
-                                    <h6 class="item-tag">Etiqueta-1</h6>
-                                    <h4 class="item-tit">Evento-X</h4>
-                                    <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h3>Dia 8</h3>
-                                <div class="card">
-                                    <h6 class="item-tag">Etiqueta-1</h6>
-                                    <h4 class="item-tit">Compromisso-A</h4>
-                                    <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                                </div>
-                                <div class="card">
-                                    <h6 class="item-tag">Etiqueta-1</h6>
-                                    <h4 class="item-tit">Compromisso-B</h4>
-                                    <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                                </div>
-                                <div class="card">
-                                    <h6 class="item-tag">Etiqueta-1</h6>
-                                    <h4 class="item-tit">Compromisso-C</h4>
-                                    <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                                </div>
-                                <div class="card">
-                                    <h6 class="item-tag">Etiqueta-1</h6>
-                                    <h4 class="item-tit">Compromisso-D</h4>
-                                    <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate nam nulla.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <div id="itens-semana" class="scroll"></div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <div class="footer is-center">
-        <a href="#">Footer</a>
-        &ndash;
-        <span>FOOTER</span>
-        &ndash;
-        <a href="#">Footer</a>
-    </div>
+    <span style="position: absolute; bottom: -1px;" role="dead-pixel">.</span>
+    <script src="mes.js"></script>
 </body>
 
 </html>
