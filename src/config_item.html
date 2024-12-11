@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,28 +7,39 @@
     <link rel="stylesheet" href="config_item.css" />
   </head>
   <body>
-    <h1>Configurar Item</h1>
-    <div>
-      <label for="type">Tipo do Item *</label>
-      <select name="typeOfItem" id="type">
-        <option value="default">Selecione</option>
-        <option value="task">Tarefas</option>
-        <option value="meeting">Reuniões</option>
-      </select>
-      <label for="name">Nome do Item *</label>
-      <input type="text" name="nameOfItem" id="name" />
-    </div>
-    <div>
-      <label for="time">Horário do Item *</label>
-      <input type="time" name="timeOfItem" id="time" />
-      <label for="local">Local do Item</label>
-      <input type="text" name="localOfItem" id="local" />
-    </div>
-    <div>
-      <label for="notes">Notas para o Item</label>
-      <input type="text" name="notesOfItem" id="notes" />
-      <a href="semana.html"><button>Criar evento</button></a>
-    </div>
-
+    <header>
+      <h1>Configurar Item</h1>
+    </header>
+    <main>
+      <form id="itemForm">
+        <section>
+          <label for="type">Tipo do Item *</label>
+          <select name="typeOfItem" id="type" required>
+            <option value="default">Selecione</option>
+            <option value="task">Tarefas</option>
+            <option value="meeting">Reuniões</option>
+          </select>
+        </section>
+        <section>
+          <label for="name">Nome do Item *</label>
+          <input type="text" name="nameOfItem" id="name" required />
+        </section>
+        <section>
+          <label for="time">Horário do Item *</label>
+          <input type="time" name="timeOfItem" id="time" required />
+        </section>
+        <section>
+          <label for="local">Local do Item</label>
+          <input type="text" name="localOfItem" id="local" />
+        </section>
+        <section>
+          <label for="notes">Notas para o Item</label>
+          <textarea name="notesOfItem" id="notes"></textarea>
+        </section>
+        <section>
+          <button type="submit">Criar evento</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
